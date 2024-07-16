@@ -1,0 +1,244 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    color: #333;
+    text-align: center; 
+}
+
+h1, h2, h3 {
+    color: #1d75cd;
+    font-weight: 700;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #1d75cd;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#ilk-div {
+    border: 3px solid #1d75cd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block; 
+    text-align: left; 
+}
+
+.img2 {
+    float: right;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+span.a {
+    display: inline; 
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    background-color: #ffdd00;
+    border: 2px solid #ff9900;
+}
+
+span.b {
+    display: inline-block;
+    width: 100px;
+    padding: 5px;
+    background-color: #00bfff;
+    border: 2px solid #1e90ff;
+}
+
+span.c {
+    display: block;
+    width: 100px;
+    padding: 5px;
+    background-color: #ff6f61;
+    border: 2px solid #ff4f4f;
+}
+
+input:focus {
+    background-color: #1d75cd78;
+    border-color: #1d75cd;
+}
+
+button {
+    color: #1d75cd78;
+}
+
+p.intro::first-letter {
+    color: #ff4500;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.img3 {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.img3:hover {
+    opacity: 1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #1d75cd;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #155a8a;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #155a8a;
+}
+
+.gallery {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block; 
+    margin-bottom: 20px;
+}
+
+.gallery:hover {
+    border-color: #1d75cd;
+}
+
+.gallery img {
+    border-radius: 8px;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    margin-bottom: 20px; 
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.search-bar {
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #1d75cd;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: #fff;
+    background-image: url('search.png');
+    background-position: 12px 50%;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 50px;
+    transition: width 1.4s ease-in-out;
+    margin: 0 auto; 
+}
+
+.search-bar:focus {
+    width: 250px;
+    outline: none;
+    background-color: #1d75cd71;
+}
+
+ol {
+    counter-reset: section;
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left; 
+    margin: 0 auto; 
+    max-width: 600px; 
+}
+
+li::before {
+    counter-increment: section;
+    content: counters(section, ".") " ";
+    color: #1d75cd;
+    font-weight: bold;
+    margin-right: 5px;
+}
